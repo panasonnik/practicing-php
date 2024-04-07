@@ -25,6 +25,16 @@ $friendsArr = explode(",",$listOfFriends);
 $friendsStr = implode(", ", $friendsArr);
 echo $friendsStr."<br>\n";
 
+//підрахувати кількість входжень підрядка у рядок
+$str = "apple, banana, orange, apple";
+$count = substr_count($str, "apple"); // $count = 2
+
+//замінити всі входження підрядка на інший підрядок
+$str = "Hello world!";
+$new_str = str_replace("world", "everybody", $str); // $new_str = "Hello everybody!"
+
+
+
 //розіменування змінних
 $cityVariable = 'city';
 $$cityVariable='Paris'; //city = Paris
@@ -35,6 +45,24 @@ if($city==='Paris') {
 } else {
     echo "Hello!"."<br>\n";
 }
+
+$a = 5;
+$b = "5";
+
+// Нестроге порівняння
+if ($a == $b) {
+    echo "\$a == \$b: true" . "<br>\n";
+} else {
+    echo "\$a == \$b: false" . "<br>\n";
+}
+
+// Строге порівняння
+if ($a === $b) {
+    echo "\$a === \$b: true" . "<br>\n";
+} else {
+    echo "\$a === \$b: false" . "<br>\n";
+}
+
 
 //приведення типів
 $floatNum = 25.4;

@@ -49,6 +49,7 @@ class Person {
     public function welcomePerson() {
         echo "Hello, $this->name!";
     }
+    //статичний метод
     public static function isAdult($age) {
         return $age>=18;
     }
